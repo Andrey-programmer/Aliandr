@@ -1,0 +1,52 @@
+@import 'partails/params';
+
+.btn-up {
+    position: fixed;
+    background-color: $icons-color;
+    border: 1px solid $icons-color;
+    top: 80%;
+    left: 90%;
+    cursor: pointer; 
+    z-index: 150;
+    border-radius: 50%;
+    opacity: .8;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    display: none;
+    color: white;
+
+    i {
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px); 
+    }
+
+    &:hover,
+    &:active {
+        background-color: $icons_hover-color !important;
+        border: 1px solid $icons_hover-color !important;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        opacity: 1;
+    }
+ 
+}
+
+@media screen and (max-width: 1400px) {
+    .btn-up {
+        top: 74%;
+        left: 95%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btn-up {
+        top: 74%;
+        left: 95%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .btn-up {
+       display:none !important;
+    }
+}

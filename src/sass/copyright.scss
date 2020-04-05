@@ -1,0 +1,78 @@
+@import 'partails/params';
+
+
+
+#copyright {
+    margin-bottom: 0; 
+    background-color: $header-color; 
+    color: #ffffff;
+    padding: 1rem 0;
+
+
+    .wrapper {
+               
+        h6 {
+            margin-bottom: 0; 
+            color: white;
+            font-size: 14px;
+        }
+
+        img {
+            height: 18px;
+            -webkit-transform: translateY(-2px);
+                    transform: translateY(-2px); 
+            display: inline-block;
+        }
+    }
+
+    .contacts {
+        // @include contact-panel;
+        .btn a {
+            color: $icons-color;
+            font-size: 16px;
+
+            &:hover {
+                color: $icons_hover-color;
+            }
+        }
+
+        .link-white {
+            color: white;
+        }
+    }
+  
+}
+
+@media screen and (max-width: 768px) {
+    #copyright {
+
+        .copyright {
+            -webkit-transform: translateY(14px);
+                    transform: translateY(14px);
+        }
+        .wrap_contacts {
+            text-align: right;
+            -webkit-transform: translateY(-16px);
+                    transform: translateY(-16px)
+        }  
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #copyright {
+
+        .copyright {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-box-ordinal-group: 6;
+                -ms-flex-order: 5;
+                    order: 5;
+            text-align: right;
+        }
+        .wrap_contacts {
+            text-align: right;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0)
+        }  
+    }
+}

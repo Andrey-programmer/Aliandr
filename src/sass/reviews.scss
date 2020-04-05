@@ -1,0 +1,107 @@
+@import 'partails/params';
+@import 'partails/mixins';
+
+
+#reviews {
+    z-index: 50;
+   
+   .carousel-item {
+
+        -webkit-transition: opacity 1s ease-out, -webkit-transform 3s ease;
+
+        transition: opacity 1s ease-out, -webkit-transform 3s ease;
+
+        transition: transform 3s ease, opacity 1s ease-out;
+
+        transition: transform 3s ease, opacity 1s ease-out, -webkit-transform 3s ease;
+
+        .wrapper{
+            height: 430px;
+
+            .carousel-caption {
+                left: 5%;
+                right: 5%;
+
+                .caption {
+                    color: $header-color;
+                    background-color: $background_reviews-color;
+                    padding: 30px;
+                }
+
+                .name {
+                    color: $icons-color;
+                    padding-bottom: 0;
+                }
+
+                .link-vk {
+                    text-decoration: none;
+                    color: $carousel_description-color;
+                }
+            }        
+
+            img {
+                height: 125px;
+                width: 125px;
+                border-radius: 50%;
+            }
+        }
+   }
+   
+    
+  
+
+    .carousel-wrapper {
+        @include carousel_wrapper;
+        .carousel-indicators {
+            top: -12px;
+        }
+     }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #reviews {
+        .carousel-item {
+            .wrapper {
+                height: 480px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    #reviews {
+        .carousel-item {
+            .wrapper {
+                height:500px;
+
+                .carousel-caption {
+                    
+                    .caption {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .carousel-wrapper {
+        
+            [class|="carousel-control"] {
+                 display: block !important;  
+            } 
+            
+            .carousel-control-prev {
+                -webkit-transform: translate(45px, -40px);
+                        transform: translate(45px, -40px);
+            }
+
+            .carousel-control-next {
+                -webkit-transform: translate(-45px, -40px);
+                         transform: translate(-45px, -40px);
+            }
+        }     
+        
+       
+    }
+}

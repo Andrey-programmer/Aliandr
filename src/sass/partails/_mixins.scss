@@ -1,0 +1,78 @@
+@mixin rounded {
+    border-radius: 50%;
+}
+
+@mixin carousel_wrapper {
+    position: relative;
+        
+    .carousel-indicators { 
+        position: absolute;
+        top: 30px;
+
+        li{
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: $header-color;
+            opacity: .6;
+
+            &.active {
+                background-color: $text-color;
+                opacity: 1;
+            }
+        }      
+    }
+
+    [class|="carousel-control"] {
+        border-radius: 50%;           
+        background-color: $icons-color;
+        position: absolute;
+        top: 20px;
+        height: 30px;
+        width: 30px;
+
+        &[class$="prev"] {
+           -webkit-transform: translateX(-10px);
+                   transform: translateX(-10px);
+        }
+
+        &[class$="next"] {
+            -webkit-transform: translateX(10px);
+                    transform: translateX(10px);
+        }
+        
+        i {
+            border: 2px solid $icons-color;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+@mixin buttons {
+    border-radius: 17px;
+    background-color: $icons-color;
+    border: none;
+    font-size: 14px;
+    padding: 6px 25px;
+
+    &:hover {
+        background-color: $icons_hover-color;
+        
+    }
+}
+
+
+@mixin input_style {
+    height: 34px;       
+    
+    padding: 6px 16px;
+    border: 1px solid $input_border-color;
+    border-radius: 17px;
+    font-size: 14px;
+
+    &:focus {
+        border: 1px solid $icons-color; 
+    }
+}
+

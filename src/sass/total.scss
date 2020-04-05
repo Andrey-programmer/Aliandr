@@ -1,0 +1,137 @@
+@import 'partails/params';
+
+* {
+    outline: 0 !important;   
+}
+
+
+body {
+    
+    font-family: Lato, Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: $text-color;
+    img {
+        max-height: 100%;
+        width: auto;
+       
+    }
+
+    h1,
+    h2, 
+    h3,
+    h4,
+    h5 {
+        color:  $header-color;
+        font-weight: bold;
+    }
+
+    h5 {
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-size: 0.875rem;  
+        line-height: 1.4;       
+    }
+
+    h1,
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+    }
+
+    section {
+        margin-bottom: 0;
+    }
+
+    p {
+        color: $text-color;
+    }    
+  
+    input:invalid { 
+        -webkit-box-shadow: none; 
+                box-shadow: none; 
+    }  
+    
+}
+
+    @media screen and (max-width: 1200px) {
+
+        html {
+            font-size: 12px;
+        }              
+    }
+
+    @media screen and (max-width: 576px) {
+        section#main-display,
+        section#why_indiv {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        body {
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 510px) {
+        section#main-display,
+        section#why_indiv {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        body {
+            h2 {
+                padding: 0 20px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 510px) {
+        section#main-display,
+        section#why_indiv {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+  
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }

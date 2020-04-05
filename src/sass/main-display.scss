@@ -1,0 +1,121 @@
+@import 'partails/params';
+#main-display {
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.4;
+    }
+    .container {
+        padding-top: 120px;
+        .row {
+            .half-display {
+                min-height: 100vh;
+                img {
+                    max-width: 100%;
+                }
+                .wrapper {
+                    .wrapp-context {
+                        .row {
+                            margin: 20px 0;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: start;
+                                -ms-flex-pack: start;
+                                    justify-content: flex-start;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                            .icon {
+                                padding-left: 0;
+                                color: $icons-color;
+                                i {
+                                    font-size: 2.5em;
+                                }
+                            }
+                            .context {
+                                margin-left: 1rem;
+                            }
+                        }
+                        button {
+                            @include buttons;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #main-display {
+        .container .row .wrapper .wrapp-context .row {
+            margin: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    #main-display {
+
+        .container {
+
+            .row {
+
+                h1 {
+                    text-align: center;
+                }
+                .half-display:last-of-type {
+                    -webkit-box-ordinal-group: -14;
+                        -ms-flex-order: -15;
+                            order: -15;           
+                    -webkit-box-pack: start !important;
+                        -ms-flex-pack: start !important;
+                            justify-content: flex-start !important;
+                    margin-bottom: 30px; 
+                }
+                .half-display {
+                    min-height: 1vh; 
+                    img {
+                        max-height: 100vh;                       
+                    }
+                    .wrapper {
+                        .wrapp-context {
+                            .wrap_button {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+  
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #main-display {
+        h1 {
+            font-size: 24px;
+            padding: 7px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    section#main-display {
+        padding: 0 20px;
+        img {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    section#main-display {
+        img {
+            margin-top: 70px;
+        }
+    }
+}

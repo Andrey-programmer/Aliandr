@@ -1,0 +1,27 @@
+@import 'partails/params';
+
+#why_indiv {
+    text-align: center;
+        
+    .row {
+        .item {
+            .wrapper{
+                .icon {
+                    font-size: 5rem;
+                    color: $icons-color;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-height: 576px) {
+    #why_indiv {
+        padding-top: 60px;
+
+        br {
+            display: none;
+        }
+    }
+}

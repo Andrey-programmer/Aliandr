@@ -1,0 +1,32 @@
+
+
+#form_modal_success {
+    text-align: center;
+    padding: 0;
+    max-width: 320px;
+    min-width: 320px;
+    margin: auto;    
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    
+    .modal-content {
+        border-radius: 15px;
+        line-height: 20px;     
+        
+        .modal-header {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .modal-body {
+            padding: 0 35px 35px 35px;
+            
+            .modal-title {
+                font-size: 24px;
+                line-height: 33px;
+            }
+        }
+
+    }
+
+}

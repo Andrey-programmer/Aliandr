@@ -1,0 +1,10 @@
+import './Lato-Black.ttf';
+import './Lato-BlackItalic.ttf';
+import './Lato-Bold.ttf';
+import './Lato-BoldItalic.ttf';
+import './Lato-Hairline.ttf';
+import './Lato-HairlineItalic.ttf';
+import './Lato-Italic.ttf';
+import './Lato-Light.ttf';
+import './Lato-LightItalic.ttf';
+import './Lato-Regular.ttf';

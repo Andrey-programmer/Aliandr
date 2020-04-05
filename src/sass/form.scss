@@ -1,0 +1,48 @@
+@import 'partails/params';
+@import 'partails/mixins';
+
+#form { 
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 2rem 0;
+    }
+    
+    .col-input {
+        text-align: center;
+
+        input {
+            @include input_style;
+            width: 70%;                      
+        }
+
+        .btn {
+
+            @include buttons;                       
+            color: white;
+            -webkit-transition: background-color .3s;
+            transition: background-color .3s;
+            padding: 6px 15px;
+            text-align: center;
+            min-width: 200px;
+
+            i {
+                margin-right: .5rem;
+                // margin-left: -10px;
+            }
+        }
+    }
+   
+}
+
+
+@media screen and (max-width: 786px) {
+    #form {
+        .col-input{
+            input {
+                width: 66%;
+            }
+        }
+    }
+}

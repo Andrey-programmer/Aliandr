@@ -1,0 +1,81 @@
+@import 'partails/params';
+
+
+#masters {   
+
+    .row {
+        margin: 1rem 0;
+
+        .image {
+            padding: 16px 15px;
+
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                max-height: 100vh;
+            }
+        }
+
+        .wrapper {
+            padding: 1rem 0;
+    
+            ul {
+                li {
+                    padding-left: 0.5rem;
+                    margin-bottom: 1.5rem;
+    
+                    i {
+                        color: $icons-color;
+                        font-size: 0.7rem;
+                        margin-right: 1rem;
+                        padding-top: 2px;
+                    }
+                }
+            }      
+        }
+    } 
+
+}
+
+@media screen and (max-width: 1200px) {
+    #masters {
+        .row {     
+            .image {
+               
+    
+                img {
+                   margin: auto;
+                }
+            }   
+        }      
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    #masters {
+        ul {
+            margin-left: -5px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #masters {
+        .andrey {
+            div.image {
+                -webkit-box-ordinal-group: -4;
+                    -ms-flex-order: -5;
+                        order: -5;
+            }
+        }
+
+        .irisha {
+            div.image {
+                padding: 16px 40px;
+            }
+        }
+    }
+}

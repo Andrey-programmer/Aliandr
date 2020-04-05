@@ -1,0 +1,28 @@
+1) npm i -D webpack webpack-cli // устанавливаем webpack в dev-зависимости
+2)  npm i -D html-webpack-plugin // устанавливаем плагин для работы с html
+3) npm i clean-webpack-plugin -D //устанавливаем плагин для очистки папки dist от устаревших файлов
+	const {CleanWebpackPlugin} = require('clean-webpack-plugin') - подключаем так
+4) npm i -D style-loader css-loader // лоадеры для работы с css
+5) npm i -D file-loader // лоадер для работы с остальными файлами (например картинками)
+6) npm i normalize.css // адаптирует стили под различные браузеры
+7) npm i -D webpack-dev-server // устанавливаем dev-server для отображения изменений в коде внутри браузера
+8) npm i -D copy-webpack-plugin // плагин  для переноса favicon.ico
+9) npm i -D mini-css-extract-plugin //для выделения css 
+10) npm i -D cross-env // пакет для задания системных переменных
+
+11) npm i -D terser-webpack-plugin //                  Эти плагины работают в связке для оптимизации CSS
+12) npm i -D optimize-css-assets-webpack-plugin//
+
+13) npm i -D less less-loader// Лоадер для работы с LESS
+14) npm i -D node-sass sass-loader //лоадер для работы с scss
+15) npm install --save-dev babel-loader @babel/core //для поддержки всех браузеров
+16) npm install --save-dev @babel/preset-env //подключаем все возможности
+17) npm install --save @babel/polyfill //для поддержки async/await
+18) npm i -D @babel/plugin-proposal-class-properties //Добавляем плагин babel для работы с классами
+19) добавляем в конфиг исходные карты для dev-версии
+	devtools: 'source-map
+	
+20) npm i -D  eslint-loader eslint// если нужно
+21) $ npm i -D babel-eslint // к нему же парсер 
+
+22) npm i -D webpack-bundle-analyzer // для анализа бандла

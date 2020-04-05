@@ -1,0 +1,82 @@
+@import 'partails/params';
+@import 'partails/mixins';
+
+
+#halls {
+
+    .row {
+        margin-bottom: 100px;
+
+        #carousel_hall_1,
+        #carousel_hall_2 { 
+
+            .carousel-wrapper {
+                @include carousel_wrapper; 
+                [class^="carousel-control"] {
+                    -webkit-transform: translateX(0) !important;
+                            transform: translateX(0) !important;
+                }
+            }         
+            
+        }
+
+        .wrapper_context {
+            h4 { 
+                padding: 16px 0;
+                margin-bottom: 10px; 
+                small {
+                    color: $font_small-color;
+                    font-size: 75%;
+                }
+            }
+
+
+            padding: 0 20px;       
+            p {
+                margin-bottom: 1.5rem;
+            }    
+
+            .btn {
+                @include buttons;
+            }
+        }
+
+      
+    }
+  
+}
+
+@media screen and (max-height: 992px) {
+    #halls {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #halls {
+        .row {
+              
+            margin-bottom: 50px;           
+           
+            &.kurskaya {  
+
+                .wrapper_context {
+                    padding-left: 0;
+                }
+            }
+            
+            &.paveletskaya {
+                div:first-of-type {
+                    -webkit-box-ordinal-group: 16;
+                        -ms-flex-order: 15;
+                            order: 15;
+                }
+            }
+
+           .carousel {
+                margin-bottom: 75px;
+            }
+        } 
+    }
+}

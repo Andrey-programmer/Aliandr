@@ -1,0 +1,144 @@
+@import 'partails/params';
+@import 'partails/mixins';
+
+
+.navbar {
+    padding: 28px 5px 22px 5px;  
+    
+    -webkit-transition: background-color .5s ease-in-out;  
+    
+    transition: background-color .5s ease-in-out;
+
+    button.navbar-toggler {
+
+        .lines { 
+            width: 30px; 
+            height: 30px;
+            padding: 3px 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            
+            .line {
+                width: 30px;
+                height: 2px;
+                background-color: $icons-color;
+                -webkit-transition: opacity .3, -webkit-transform .3s;
+                transition: opacity .3, -webkit-transform .3s;
+                -webkit-transition: opacity .3s, -webkit-transform .3s;
+                transition: opacity .3s, -webkit-transform .3s;
+                transition: transform .3s, opacity .3s;
+                transition: transform .3s, opacity .3s, -webkit-transform .3s;
+
+                &-first.x {
+                    -webkit-transform-origin: center center;
+                            transform-origin: center center;
+                    -webkit-transform: translateY(11px) rotate(45deg);
+                            transform: translateY(11px) rotate(45deg);
+                }
+                &-second.x {
+                    -webkit-transform-origin: center center;
+                            transform-origin: center center;
+                    -webkit-transform: translateX(-39px);
+                            transform: translateX(-39px);
+                            opacity: 0;
+                }
+                &-third.x {
+                    -webkit-transform-origin: center center;
+                            transform-origin: center center;
+                    -webkit-transform: translateY(-11px) rotate(-45deg);
+                            transform: translateY(-11px) rotate(-45deg);
+                }
+            }
+        } 
+    }
+
+    .navbar-brand {
+        .logo {
+            max-height: $logo-height;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+
+            margin-right: 15px;
+            .nav-link{
+                color: $text-color;  
+                &:hover {
+                    color: $navbar_text_hover-color;
+                }
+            }            
+        }       
+    }
+
+    .contacts {
+        line-height: 1.1rem;
+        margin-right: 15px;
+    
+    
+        .btn {
+            @include rounded;
+            background-color: $icons-color;    
+            height: 30px;
+            width: 30px;    
+            padding: 0 6px;     
+            line-height: 30px;   
+            border: 0;
+            margin: 0 5px;
+            -webkit-transition: background-color .3s;
+            transition: background-color .3s;
+            a {
+                i {
+                    color: #fff;
+    
+                    &.fa-phone {
+                        -webkit-transform: scale(-1, 1) translate(0, -2px);
+                                transform: scale(-1, 1) translate(0, -2px);
+                    }
+                }
+            }
+    
+            &:hover {
+                background-color: $icons_hover-color;
+            }
+        
+            
+        } 
+            
+        .wtv-phone { 
+    
+            a.link-dark {
+                color: $text-color;
+                &:hover {
+                    text-decoration: none;
+                    color: $navbar_text_hover-color;
+                }
+            }
+    
+            small {
+                color: $icons-color;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px ) {
+    .navbar{
+
+        background-color: white;
+        
+        .contacts {    
+
+            .btn:first-of-type {
+                margin-left: 0;
+            }
+        }    
+    }
+}
+
+

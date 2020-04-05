@@ -1,0 +1,103 @@
+@import 'partails/params';
+
+#pricing {
+    .row {
+        text-align: center;
+
+        .wrapper {
+            padding: 0;
+
+            .card {
+                padding: 30px 0 10px;
+                margin-bottom: 20px;
+    
+                .price {                
+                    display: inline-block;
+                    height: $height-price-around;
+                    width: $height-price-around;
+                    line-height: $height-price-around;
+                    border-radius: 50%;
+                    background-color: $icons-color;
+                    color: white;
+                    font-size: 1.5rem;
+                    margin: auto;    
+                    margin-bottom: 15px;       
+                }
+        
+                .card-title {
+                    text-transform: none;
+                    font-size: 1.15rem;
+                    letter-spacing: 0;
+    
+                    .text-color {
+                        color: $icons-color;
+                    }
+    
+                    span {
+                        color: white;
+                    }
+                }
+                
+                .card-footer {
+                    background-color: white;
+
+                    .btn {
+                        border-radius: 15px;
+                        color: $icons-color;
+                        padding: 4px 20px;
+                        border: 1px solid $icons-color;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        background-color: white;
+        
+                        &:hover {
+                            color: $icons_hover-color;
+                            border: 1px solid $icons_hover-color;
+                        }
+                    }
+                }
+               
+    
+                .card-text.little {
+                    font-size: 12px;
+                }
+                .card-text:first-of-type i{
+                    color: $icons-color;
+                }
+            }      
+        }
+      
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #pricing .row .card {
+        margin: 7px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #pricing .row{ 
+        margin: 0;
+
+        .card-deck{
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            display: block;
+
+            .wrapper {
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: auto;
+    
+               
+    
+                .card-text {
+                    margin-bottom: 5px;
+                }
+            }
+        }     
+    }
+}
