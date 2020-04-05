@@ -141,15 +141,15 @@ module.exports = {
                 test: /\.(png|jpg|svg|gif|ico|php)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[hash].[ext]',
+                    name: '[path][name].[hash].[ext]',
                     esModule: false
                 }
             },
             {
-                test: /\.(ttf|woff|woff2|eot)$/,
+                test: /\.(ttf)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]'
+                    name: '[path][name].[ext]'
                 }
             },
             { 
