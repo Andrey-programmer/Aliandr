@@ -15,6 +15,10 @@
                 height: auto;
                 max-height: 100vh;
             }
+
+            &.andrey img {
+                max-width: 80%;
+            }
         }
 
         .wrapper {
@@ -64,6 +68,9 @@
 
 @media screen and (max-width: 768px) {
     #masters {
+        .header {
+            order: -10;
+        }
         .andrey {
             div.image {
                 -webkit-box-ordinal-group: -4;
@@ -72,9 +79,10 @@
             }
         }
 
-        .irisha {
-            div.image {
+        .alisa {
+            div.image.alisa{
                 padding: 16px 40px;
+                order: -3;
             }
         }
     }
