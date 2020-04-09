@@ -9,6 +9,7 @@
         .row {
             .half-display {
                 min-height: 100vh;
+                
                 img {
                     max-width: 100%;
                 }
@@ -100,6 +101,10 @@
             font-size: 24px;
             padding: 7px;
         }
+
+        .container .row .half-display.masters {
+            margin: -70px auto;
+        }
     }
 }
 
@@ -109,6 +114,10 @@
         img {
             margin-top: 50px;
         }
+    }
+
+    section#reviews.animated {
+        padding-top: 50px;
     }
 }
 

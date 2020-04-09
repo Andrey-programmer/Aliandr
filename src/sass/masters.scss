@@ -74,8 +74,10 @@
         .andrey {
             div.image {
                 -webkit-box-ordinal-group: -4;
-                    -ms-flex-order: -5;
-                        order: -5;
+                -ms-flex-order: -5;
+                order: -5;
+                max-width: 80%;
+                margin: auto;
             }
         }
 
@@ -84,6 +86,14 @@
                 padding: 16px 40px;
                 order: -3;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #masters {
+        &.animated {
+            padding-top: 45px;
         }
     }
 }
