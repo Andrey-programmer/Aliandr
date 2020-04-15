@@ -67,71 +67,64 @@ body {
     
 }
 
-    @media screen and (max-width: 1200px) {
-
-        html {
-            font-size: 12px;
-        }              
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }              
+}
+@media screen and (max-width: 576px) {
+    section#main-display,
+    section#why_indiv {
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 80px;
     }
-
-    @media screen and (max-width: 576px) {
-        section#main-display,
-        section#why_indiv {
-            padding-left: 80px;
-            padding-right: 80px;
-        }
-
-        body {
-            h2 {
-                font-size: 20px;
-            }
+    body {
+        h2 {
+            font-size: 20px;
         }
     }
-
-    @media screen and (max-width: 510px) {
-        section#main-display,
-        section#why_indiv {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-
-        body {
-            h2 {
-                padding: 0 20px;
-            }
+}
+@media screen and (max-width: 510px) {
+    section#main-display,
+    section#why_indiv {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    body {
+        h2 {
+            padding: 0 20px;
         }
     }
-
-
-    @media screen and (max-width: 510px) {
-        section#main-display,
-        section#why_indiv {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+}
+@media screen and (max-width: 510px) {
+    section#main-display,
+    section#why_indiv {
+        padding-left: 20px;
+        padding-right: 20px;
     }
+}
 
-  
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-  
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }

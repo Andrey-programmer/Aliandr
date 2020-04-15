@@ -57,13 +57,16 @@
     }
 
     .navbar-brand {
+
         .logo {
             max-height: $logo-height;
+            position: relative;
+            bottom: 9px;
         }
     }
+
     .navbar-nav {
         .nav-item {
-
             margin-right: 15px;
             .nav-link{
                 color: $text-color;  
@@ -138,6 +141,13 @@
                 margin-left: 0;
             }
         }    
+    }
+}
+
+@media screen and (max-width:576px){
+    .navbar{
+       padding: 17px 35px 15px 45px;
+
     }
 }
 

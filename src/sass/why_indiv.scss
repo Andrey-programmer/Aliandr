@@ -15,11 +15,15 @@
     }
 }
 
+@media screen and (max-height: 1205px) {
+    #why_indiv {
+        padding-top: 0;
+    }
+}
+
 
 @media screen and (max-height: 576px) {
     #why_indiv {
-        padding-top: 60px;
-
         br {
             display: none;
         }

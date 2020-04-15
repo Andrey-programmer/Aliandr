@@ -5,13 +5,11 @@
         line-height: 1.4;
     }
     .container {
-        padding-top: 120px;
         .row {
             .half-display {
                 min-height: 100vh;
-                
                 img {
-                    max-width: 100%;
+                    max-width: 100%;                    
                 }
                 .wrapper {
                     .wrapp-context {
@@ -49,8 +47,17 @@
 
 @media screen and (max-width: 992px) {
     #main-display {
-        .container .row .wrapper .wrapp-context .row {
-            margin: 12px;
+        .container{
+            padding-top: 60px;
+
+            .row {
+                .wrapper .wrapp-context .row {
+                    margin: 12px;
+                }
+                .half-display {
+                    min-height: auto;
+                }
+            } 
         }
     }
 }
@@ -61,6 +68,7 @@
     #main-display {
 
         .container {
+            padding-top: 105px;
 
             .row {
 
@@ -102,8 +110,12 @@
             padding: 7px;
         }
 
-        .container .row .half-display.masters {
-            margin: -70px auto;
+        .container {
+            padding-top: 0;
+            .row .half-display.masters {
+                margin: -70px auto;
+            }
+
         }
     }
 }
