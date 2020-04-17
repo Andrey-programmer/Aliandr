@@ -35,6 +35,11 @@
                                 margin-left: 1rem;
                             }
                         }
+                        .wrap_button {
+                            position: relative;
+                            z-index: 1000;
+                        }
+
                         button {
                             @include buttons;
                         }
