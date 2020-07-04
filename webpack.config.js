@@ -66,7 +66,7 @@ const babelLoader = () => {
     }]
 
     if (isDev) {
-        loader.push({loader: 'eslint-loader'})
+        // loader.push({loader: 'eslint-loader'})
     }
 
     return loader
