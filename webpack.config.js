@@ -146,7 +146,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(ttf)$/,
+                test: /\.(ttf|txt)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[path][name].[ext]'

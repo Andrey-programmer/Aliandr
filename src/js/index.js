@@ -34,6 +34,9 @@ import './ajax';
 // подключаем php 
 import '../php/form.php';
 
+// ..импортируем текстовый файл
+import '../robots.txt'
+
 
 
 
