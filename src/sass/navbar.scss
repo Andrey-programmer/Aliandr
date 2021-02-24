@@ -155,4 +155,12 @@
     }
 }
 
+@media screen and (min-width: 395px) {
+    .navbar{
+        h2.dance_name.col-9.d-xs-none.d-sm-block.d-md-none {
+            display: none !important;
+        }
+    }
+}
+
 
