@@ -74,6 +74,8 @@
             margin-right: 15px;
             .nav-link{
                 color: $text-color;  
+                font-weight: bold;
+
                 &:hover {
                     color: $navbar_text_hover-color;
                 }
